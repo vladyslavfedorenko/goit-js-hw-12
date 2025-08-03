@@ -1,25 +1,49 @@
+ody {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.form {
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+}
+
+.gallery-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+}
+
+.info {
+  padding: 10px;
+}
+
+.load-more {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
 .hidden {
   display: none;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-.gallery__item img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.load-more {
-  margin: 20px auto;
-  display: block;
-}
-
 .loader {
+  display: block;
+  margin: 10px auto;
   text-align: center;
-  margin: 10px;
 }
